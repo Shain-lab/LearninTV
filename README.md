@@ -1,4 +1,3 @@
 # LearninTV
-Website for Learnin
-https://mylearningapp.atlassian.net/browse/WT-2
+Website for Learnin About & Jobs Page
 #LearninTV
