@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.faq {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordion {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2%;
+  max-width: 800px;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  border:0;
+  margin: 1rem 0;
+  border-radius: 0.1rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  font-family: 'Montserrat', sans-serif;;
+  padding: 1rem 3rem 1rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  background: #303030;
+  color: #fff;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+  
+}
+.accordion-item-body {
+  font-family: 'Montserrat', sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: #303030;
+  color: #fff;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+.make-content-visible{
+    max-height: 20rem;
+}
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:800px) {
+    h1{
+        font-size: 2rem;
+    }
+    .accordion{
+        width:90%;
+    }
+}
+
+.nav-link{
+  color:whitesmoke;
+}
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #fff;
+  color:#000;
+}
+.primary-btn1{
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #303030;
+  color:#fff;
+}
+.primary-btn1:hover{
+  background-color: whitesmoke;
+  color: #111;
+} 
+.primary-btn:hover{
+  background-color: tomato;
+  color:whitesmoke;
+}
+
+#testimonials{
+
+  background-color: #fff;
+}
+.csection{
+  padding-top:5%;
+}
+.testimonial-img{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-text{
+  font-size: 1rem;
+  font-weight: bold;
+  padding:0 10%;
+  font-family: 'Signika Negative', sans-serif;
+}
+.cont-head{
+  font-size:2.3rem;
+  font-family: Lora;
+  padding:5% 0;
+}
+.j{
+  background-color: whitesmoke;
+  color:#111;
+  font-weight: 700;
+  padding-bottom: 3% 0;
+  border:0;
+}
+.j:hover{
+  background-color: #111;
+  color:whitesmoke;
+}
+.icon{
+  color:#303030;
+  padding-bottom:2rem;
+}
+.icon:hover{
+  color:midnightblue;
+}
+.icon img:hover{
+  opacity: 0.7;
+}
+
+
+.downloadbtn {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.downloadb{
+  display: inline-block;
+  margin: 10px;
+}
+
+.download {
+  width: 200px;
+  height: 75px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.download > .fa {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 70px;
+}
+
+.df {
+  top: 20px;
+  font-size: .68em;
+}
+
+.dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+.hVhPaL {
+    background-color: rgb(43, 41, 41);
+    color: rgb(245, 240, 240);
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    box-shadow: 0px 18px 13px -6px rgb(0 0 0 / 20%);
+    padding: 15px 0px;
+    width: 240px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 48px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dow{
+  margin:0;
+  padding: 0 2%;
+}
+.imgdow{
+  filter: invert();
+}
+.download:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  
+}
+.foot{
+  padding: 0 3rem;
+}
+.spinner-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    animation: spin 0.5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+/*Simulate page content*/
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background: url("https://source.unsplash.com/random/4000x4000") center no-repeat;
+    background-size: cover;
+}
